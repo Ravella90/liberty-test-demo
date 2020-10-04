@@ -48,7 +48,7 @@ public class GetAndPostUserTests {
 	 * status code.
 	 */
 	@Test
-	public void postUser() throws Exception {
+	public void postUserSuccessTest() throws Exception {
 		User user = getUsers.postUserInfo("darth vader", "villain");
 		assertEquals(HttpStatus.CREATED.value(), user.getStatusCode());
 		assertEquals("darth vader", user.getName());
